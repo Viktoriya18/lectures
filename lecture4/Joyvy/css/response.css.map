@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oCAAqC;EACpC,WAAY;IACL,KAAK,EAAE,GAAG;IACV,KAAK,EAAE,IAAI",
+"sources": ["../scss/response.scss"],
+"names": [],
+"file": "response.css"
+}

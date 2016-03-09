@@ -1,0 +1,70 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #050505;
+    body {
+      color: white;
+      font-family: sans-serif;
+      z-index: 1;
+        h2 {
+        font-size: 28px;
+        font-weight: lighter;
+        font-family: Times;
+     }
+        p {
+        font-size: 15px;
+        font-family: Times;
+        color: #766271;
+        line-height: 1.5em;
+     }
+        button {
+        background-color: #3399FF;
+        border-radius: 5px;
+        height: 50px;
+        width: 260px;
+        color: #fff;
+        font-size: larger;
+        border: 2px solid #1282ae;
+     }
+        .main {
+        text-align: center;
+        background: radial-gradient(ellipse at top center, rgba(66,41,44,1) 10%,rgba(62,20,45,1) 40%,rgba(38,8,40,1) 50%,rgba(5,5,5,0) 70%); /* W3C */
+        margin-bottom: 25px;
+     }
+        .menu {
+            margin: 0 20%;
+            &__text {
+                height: 300px;
+                display: flex;
+                margin: 50px 0;
+                width: 500px;
+                h3 {
+                font-family: Times;
+                font-size: 28px;
+                font-weight: lighter;
+                width: 400px;
+                }
+                .play {
+                    display: relative;
+                    display: inline-block;
+                    height: auto;
+                    width: 470px;
+                    vertical-align: middle;
+                    margin: 0;
+                    padding: 0 13px;
+                }
+                #play {
+                    background: radial-gradient(ellipse at bottom center, rgba(68,62,106,1) 5%,rgba(68,62,106,1) 25%,rgba(27,53,69,1) 50%,rgba(5,5,5,1) 75%);
+                }
+                #meet {
+                    background: radial-gradient(ellipse at center, rgba(106,63,70,1) 0%,rgba(79,31,66,1) 25%,rgba(34,18,41,1) 60%,rgba(5,5,5,0) 80%);;
+                }
+                
+            }
+        }
+        .footer {
+                text-align: center;
+                background: radial-gradient(ellipse at bottom center, #42292c 0%,#3e142d 28%,#260828 58%,#050505 85%);
+            }
+    }
+}
