@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $(".openmenu").hide();
+    $(".showmenu").click(function(){
+        $(".openmenu").show();
+    });
+    $(".close").click(function(){
+        $(".openmenu").hide();
+    });
+});
