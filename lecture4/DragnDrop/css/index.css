@@ -1,0 +1,21 @@
+#boxA, #boxB {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    -moz-user-select: none;
+}
+#boxA { 
+    background-color: #FFFF00; 
+    width:75px; 
+    height:75px;
+    border-radius: 0 60% 15%; 
+    box-shadow: 10px 10px 5px #888888;
+}
+#boxB { 
+    width:250px; 
+    height:250px; 
+    background:linear-gradient(to bottom, #009900, #006633, #006600, #003333, #003300 )
+}
+h1 {
+    text-align: center;
+}

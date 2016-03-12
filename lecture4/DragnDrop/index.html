@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="css/index.css">
+      <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+    <h1>Put lemon on square</h1>
+        <center>
+         <div id="boxA" draggable="true"
+            ondragstart="return dragStart(event)">
+            <p></p>
+         </div>
+         <div id="boxA" draggable="true"
+            ondragstart="return dragStart(event)">
+            <p></p>
+         </div>
+         <div id="boxA" draggable="true"
+            ondragstart="return dragStart(event)">
+            <p></p>
+         </div>
+         <div id="boxA" draggable="true"
+            ondragstart="return dragStart(event)">
+            <p></p>
+         </div>
+         
+         <div id="boxB" ondragenter="return dragEnter(event)" 
+            ondrop="return dragDrop(event)" 
+            ondragover="return dragOver(event)">
+         </div>
+      </center>
+    </body>
+</html>
