@@ -1,0 +1,189 @@
+@mixin about {
+        border: 1px solid #acacac;
+        border-radius: 3px;
+        box-shadow: 3px 3px 6px 2px #acacac;
+        padding: 30px 70px;
+}
+@mixin background_image {
+        background-repeat: no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+        -o-background-size: cover;  
+        background-size: cover;
+}
+@mixin text_information {
+        color: #660000;
+        font-family:Lobster, cursive; 
+        font-size: 15px;
+}
+@mixin style_none {
+        list-style: none;
+        display: inline-flex;
+}
+@mixin width ($width) {
+        width: $width;
+}
+@mixin image_width {
+  img {
+    width: 100%;
+  }
+}
+
+
+  #base-content {
+    background-color: white;
+    .content {
+      background-image: url(../img/sky.jpg);
+      @include background_image;
+      box-shadow: 0 0 18px 0 #b1aaaa;
+      position: relative;
+      z-index: 6;
+      margin: 0 9%;
+      border-radius: 1%; 
+      .content__nav-button {
+        .button--left {
+          @include width(100px);
+            }
+        .button--right {
+          position: absolute;
+          right: 25px;
+          @include width(100px);
+            }
+        }
+      .content__nav-menu {
+        position: absolute;
+        top: 100px;
+        .nav-menu__image {
+          @include style_none;
+          li {
+            .title {
+              @include text_information;
+              font-size: 30px;
+            }
+            .circular-image {
+              width: 75%;
+            }
+            ul {
+              display: none;
+              padding-left: 32px;
+              list-style: none;
+              li {
+                @include text_information;
+                .circular-image--two {
+                position: relative;
+                @include width(50px);
+              }
+              span{
+                float: right;
+                @include width(80px);
+                margin-top: 15px;
+              }
+           }
+         }
+         &:hover ul {
+          display: block;
+         }
+       }
+    }
+  }
+    .content__body {
+      position: absolute;
+      padding: 0px 10%;
+      top: 100px;
+        @include style_none;
+        img {
+          width: 75%;
+          opacity: 0.4;
+          filter: alpha(opacity=100);
+          &:hover {
+            opacity: 1.0;
+            filter: alpha(opacity=40);
+            width: 85%;
+          }
+          &:active {
+            background-color: yellow;
+        }
+      }
+    }
+      h1 {
+        @include text_information;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 200px;
+      }
+    .content__showLanguage {
+      slick {
+        
+      }
+      margin: 0 12%;
+    }
+    .content__showVision {
+      margin: 0 28%;
+    }
+    .content__showHearing {
+      margin: 3% 36%;
+    }
+    .content__showMotility {
+      .content__showMotility--drag {
+        display: flex;
+        width: 60%;
+        margin: 0 19%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .content__shadow {
+      @include image_width;
+    }
+    .content__wraper-main {
+      background-image: url("../img/grass.png");
+      @include background_image;
+      margin-top: 35%;
+      @include image_width;
+  }
+    .content__wraper {
+      background-image: url("../img/grass.png");
+      @include background_image;
+      @include image_width;
+  }
+    .content__about {
+      background-color: #669900;
+      padding: 15% 10%;
+      text-align: center;
+      .content__about--information {
+          border: 2px solid #acacac;
+          border-radius: 3px;
+          box-shadow: 3px 3px 6px 2px #acacac;
+          padding: 30px 70px;
+          .content__about--header {
+            @include text_information;  
+            font-size: 35px;
+            margin-top: 45px;
+          }
+        p {
+          @include text_information;
+        }
+      }
+    }
+    .content__footer {
+        .item::before {
+          @include width(0px);
+        }
+        .item--blue {
+          color: blue;
+        }
+        .item--red {
+          color: red;
+        }
+        .item--green {
+          color: green;
+        }
+        .item--orange {
+          color: orange;
+        }
+      }
+    }
+}
+
+/*# sourceMappingURL=application.css.map */

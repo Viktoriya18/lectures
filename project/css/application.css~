@@ -1,0 +1,18 @@
+body {
+  background-image: url(../img/sky.jpg);
+  background-repeat: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.base-content {
+  background: white none repeat scroll 0 0;
+  box-shadow: 0 0 18px 0 #b1aaaa;
+  height: 100%;
+  position: relative;
+  z-index: 6;
+  margin: 0 9%;
+  border-radius: 1%; }
+
+/*# sourceMappingURL=application.css.map */

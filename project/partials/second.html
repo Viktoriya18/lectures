@@ -1,0 +1,113 @@
+            <div class="content__body">
+                    <a href="" ng-click="vm.myFunc('language')"><img class="language content__body--image" src="img/1.png"> </a>
+                    <a href="" ng-click="vm.myFunc('vision')"><img class="vision content__body--image" src="img/2.png"> </a>
+                    <a href="" ng-click="vm.myFunc('hearing')"><img class="hearing content__body--image" src="img/3.png"> </a>
+                    <a href="" ng-click="vm.myFunc('motility')"><img class="motility content__body--image" src="img/5.png"> </a>
+            </div>
+            <h1 ng-show="vm.showLanguage">At this age, a child should know 50 to 150 words.<br> Let's check them out!</h1>
+            <h1 ng-show="vm.showVision">Let's check what words your child can call seeing at the same time examine alphabet</h1>
+            <h1 ng-show="vm.showHearing">Include your child audiotape with the names of animals, let him try again</h1>
+            <h1 ng-show="vm.showMotility">Maybe your child can arrange everything in its place!</h1>
+
+            <div class="content__showLanguage" ng-show="vm.showLanguage">
+                <slick centerMode=true>
+                    <div>
+                        <img src="img/animals_cards_12.jpeg">
+                    </div>
+                    <div>
+                        <img src="img/4_color.jpeg">
+                    </div>
+                    <div>
+                        <img src="img/big_and_small.jpeg">
+                    </div>
+                </slick>
+            </div>
+            <div class="content__showVision" ng-show="vm.showVision">
+            <slick centerMode=true>
+                    <div>
+                        <video width="480" height="400" controls>
+                            <source src="video/Phonics Song 2.mp4" type="video/mp4">
+                            <source src="video/Phonics Song 2.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div>
+                        <video width="480" height="400" controls>
+                            <source src="video/Zoo.mp4" type="video/mp4">
+                            <source src="video/Zoo.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div>
+                        <video width="480" height="400" controls>
+                            <source src="video/Family.mp4" type="video/mp4">
+                            <source src="video/Family.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </slick>
+            </div>
+            <div class="content__showHearing" ng-show="vm.showHearing">
+                <slick centerMode=true>
+                    <div>
+                        <audio controls>
+                            <source src="audio/Pooh.ogg" type="audio/ogg">
+                            <source src="audio/Pooh.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div>
+                        <audio controls>
+                            <source src="audio/Pooh.ogg" type="audio/ogg">
+                            <source src="audio/Pooh.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div>
+                        <audio controls>
+                            <source src="audio/Pooh.ogg" type="audio/ogg">
+                            <source src="audio/Pooh.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </slick>
+            </div>
+            <div class="content__showMotility" ng-show="vm.showMotility">
+                    <div class="content__showMotility--drag">
+                        <div class="col-sm-6 col-xs-6" ng-repeat="column in vm.items.columns">
+                            <div class="column">
+                                <ul class="cards card-list" as-sortable="vm.dragControlListeners" data-ng-model="column.cards">
+                                    <li class="card" ng-repeat="card in column.cards" as-sortable-item>
+                                        <div as-sortable-item-handle>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <img class="image" ng-src='{{card.url}}'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="content__showHearing" ng-show="vm.showHearing">
+            </div>
+            <div class="content__shadow" ng-show="vm.showLanguage">
+                <img src="img/shadow.png">
+            </div>
+            <div class="content__shadow" ng-show="vm.showVision">
+                <img src="img/shadow.png">
+            </div>
+            <div class="content__shadow" ng-show="vm.showHearing">
+                <img src="img/shadow.png">
+            </div>
+            <div class="content__shadow" ng-show="vm.showMotility">
+                <img src="img/shadow.png">
+            </div>
+            <div class="content__wraper">
+                <embed width="350" height="200" wmode="transparent" src="http://www.crazyprofile.com/butterfly/Butterfly.swf?nr=6&type1=0&type2=3&type3=1&type4=4&type5=5&type6=2" enablejavascript="false" allowscriptaccess="never" allownetworking="internal">
+                <embed width="350" height="200" wmode="transparent" src="http://www.crazyprofile.com/butterfly/Butterfly.swf?nr=6&type1=0&type2=3&type3=1&type4=4&type5=5&type6=2" enablejavascript="false" allowscriptaccess="never" allownetworking="internal">
+                <embed width="350" height="200" wmode="transparent" src="http://www.crazyprofile.com/butterfly/Butterfly.swf?nr=6&type1=0&type2=3&type3=1&type4=4&type5=5&type6=2" enablejavascript="false" allowscriptaccess="never" allownetworking="internal">
+                <img class="still" src="img/grass.png">
+            </div>
