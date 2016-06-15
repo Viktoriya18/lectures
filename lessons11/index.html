@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .b {
+        border: 1px solid black;
+        height: 100px;
+        margin: 10px;
+        overflow: scroll;
+      }
+      input {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="text" placeholder="sender" required="true">
+    <input type="text" id="user" placeholder="user" required="true">
+    <button type="button" id="button3">custom message</button>
+    <br>
+    <button type="button" id="button1">Send message from John</button>
+    <button type="button" id="button2">Send message from Bill</button>
+
+
+    <div class="b" id="block1">
+      Number of recieved messages <span id="numMessages"></span>
+    </div>
+        <div class="b" id="block2">
+          Last recieved message from: <span id="senderName"></span>
+          <br>
+          Message text: <span id="messageText"></span>
+          <br>
+          Time: <span id="messageTime"></span>
+      </div>
+      <div class="b" id="block3">
+        Message text: <span id="messageText"></span>
+          <br>
+          Time: <span id="messageTime"></span>
+      </div>
+      <button type="button" id="button4">message from John</button>
+      <button type="button" id="button5">message from John</button>
+      <button type="button" id="button6">Custom message</button>
+      <div class="b" id="block4"></div>
+    <script type="text/javascript" src="js/script.js"></script>
+ </body>
+</html>
+
