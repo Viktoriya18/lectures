@@ -1,0 +1,25 @@
+@mixin table__style {
+        padding-left: 10px;
+        border-color: #e0e0d1;
+        font-family: 'Trebuchet MS';
+        color: #696969;
+}
+@mixin header__string {
+        font-family: Verdana;
+        font-weight: 600;
+        line-height: 25px;
+}
+@mixin icon {
+        a {
+            img {
+                border-radius: 5px;
+            }
+        }
+}
+@mixin row {
+        display:table-cell; 
+        border:1px solid #DCDCDC;
+        width:20%;
+        height: 27px;
+        color: #696969;
+}

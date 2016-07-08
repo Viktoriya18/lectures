@@ -1,0 +1,17 @@
+@media (min-width: 300px) and (max-width: 768px) {
+      h2 {
+        font-size: 25px;
+      }
+      .icon {
+        display: -moz-stack;
+        margin-top: 54px;
+        .button {
+            margin-top: 0px;
+        }
+      }
+      .grid {
+        .photo {
+            visibility: hidden;
+        }
+      }
+  }
